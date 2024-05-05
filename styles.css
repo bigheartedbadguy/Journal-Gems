@@ -1,0 +1,10 @@
+body {
+	background-color: powderblue;
+}
+h1 {
+	color: blueviolet;
+}
+p {
+	color: darkred;
+}
+<!-- With an external style sheet, you can change the look of an entire web site, by changing one file! -- >
