@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>40. HTML Paths</title>
+	<link rel="icon" type="image/x-icon" href="C:\Users\Rodney Mukarati\Desktop\Let's Go\HTML\Star.jpeg">
+</head>
+<body>
+<p><b>A file path describes the location of a file in a web site's folder structure.</b></p>
+<h2>File Path Examples</h2>
+<p>
+	<table>
+		<tr>
+			<th style="width:280px;">Path</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>&lt;img src="picture.jpg"&gt;</td>
+			<td>The "picture.jpg" file is located in the same folder as the current page</td>
+		</tr>
+		<tr>
+			<td>&lt;img src="/images/picture.jpg"&gt;</td>
+			<td>The "picture.jpg" file is located in the images folder at the root of the current web</td>
+		</tr>
+		<tr>
+			<td>&lt;img src="../picture.jpg"&gt;</td>
+			<td>The "picture.jpg" file is located in the folder one level up from the current folder</td>
+		</tr>
+	</table>
+</p>
+<h2>HTML File Paths</h2>
+<p>A file path describes the location of a file in a web site's folder structure.</p>
+<p>File paths are used when linking to external files, like:
+<ul>
+	<li>Web Pages</li>
+	<li>Images</li>
+	<li>Style Sheets</li>
+	<li>JavaScripts</li>
+</ul>
+</p>
+<h2>Absolute Fiile Paths</h2>
+<p>An absolute file path is the full URL to a file:
+<img src="C:\Users\Rodney Mukarati\Pictures\Screenshots\Screenshot (90).png" alt="Example"></p>
+<h2>Relative File Paths</h2>
+<p>A relative file path points to a file relative to the current page.</p>
+<p>In the following example, the file path points to a file in the images folder located at the root of the current web:</p>
+<p><img src="C:\Users\Rodney Mukarati\Pictures\Screenshots\Screenshot (91).png" alt="Example"></p>
+<p>In the following example, the file path points to a file in the images folder located in the current folder:</p>
+<p><img src="C:\Users\Rodney Mukarati\Pictures\Screenshots\Screenshot (92).png" alt="Example"></p>
+<p>In the following example, the file path points to a file in the images folder located in the folder one level up from the current folder:</p>
+<p><img src="C:\Users\Rodney Mukarati\Pictures\Screenshots\Screenshot (93).png" alt="Example"></p>
+<h1>Best Practice</h1>
+<p><b>It is best practice to use relative file paths (if possible).</b></p>
+
+<p>When using relative file paths, your web pages will not be bound to your current base URL. All links will work on your own computer (localhost) as well as on your current public domain and your future public domains.</p>
+</body>
+</html>

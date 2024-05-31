@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Changing Attribute</title>
+	<link rel="icon" type="image/x-icon" href="C:\Users\Rodney Mukarati\Desktop\Let's Go\HTML\Star.jpeg">
+</head>
+<body>
+<h1>JavaScript Changing Attribute</h1>
+<p>Here, a JavaScript changes the value of the src(source) attribute of an image.</p>
+
+<script>
+	function light(sw) {
+		var pic;
+		if (sw == 0) {
+			pic = "pic_bulboff.gif"
+		} 
+		else {
+			pic = "pic_bulbon.gif"
+		} 
+		document.getElementById('myImage').src = pic;
+	}
+</script>
+
+<img id="myImage" src="pic_bulboff.gif" width="100" height="180">
+
+<p>
+	<button type="button" onclick="light(1)">Light On</button>
+	<button type="button" onclick="light(0)">Light Off</button>
+</p>
+
+</body>
+</html>

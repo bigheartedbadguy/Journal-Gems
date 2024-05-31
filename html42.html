@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>43. HTML Responsive</title>
+	<link rel="icon" type="image/x-icon" href="C:\Users\Rodney Mukarati\Desktop\Let's Go\HTML\Star.jpeg">
+</head>
+<body>
+<h1>HTML Responsive Web Design</h1>
+<p>Responsive web design is about creating web pages that look good on all devices!</p>
+<p>A responsive web design will automatically adjust for different screen sizes and viewports.</p>
+<h2>What is Responsive Web Design?</h2>
+<p>Responsive Web Design is about using HTML and CSS to automatically resize, hide, shrink, or enlarge, a website, to make it look good on all devices (desktops, tablets, and phones):
+<br>
+<a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_responsive_page">Example</a></p>
+<h2>Setting The Viewport</h2>
+<p>To create a responsive website, add the following <b>meta</b> tag to all your web pages</p>
+<p><img src="C:\Users\Rodney Mukarati\Pictures\Screenshots\Screenshot (152).png" alt="Viewport Example"></p>
+<p>This will set the viewport of your page, which will give the browser instructions on how to control the page's dimensions and scaling.</p>
+<p>Here is an example of a web page without the viewport meta tag, and the same web page with the viewport meta tag:
+<br>
+<img src="C:\Users\Rodney Mukarati\Pictures\Screenshots\Screenshot (153).png" alt="Example of With and Without A Viewport Meta Tag"></p>
+<h2>Responsive Images</h2>
+<p>Responsive images are images that scale nicely to fit any browser size</p>
+<h3>Using The Width Property</h3>
+<p>If the CSS width property is set to 100%, the image will be responsive and scale up and down:
+<br>
+<img src="C:\Users\Rodney Mukarati\Pictures\Screenshots\Screenshot (147).png" style="width:100;"></p>
+<p>Notice that in the example above, the image can be scaled up to be larger than its original size. A better solution, in many cases, will be to use the max-width property instead.</p>
+<h3>Using the max-width Property</h3>
+<p>If the max-width property is set to 100%, the image will scale down if it has to, but never scale up to be larger than its original size:
+<br>
+<img src="C:\Users\Rodney Mukarati\Pictures\Screenshots\Screenshot (147).png" style="max-width:100%;height:auto;"></p>
+<h3>Show Different Images Depending On Browser Width</h3>
+<p>The HTML picture element allows you to define different images for different browser window sizes.</p>
+<p>Resize the browser window to see how the image below changes depending on the width:</p>
+<picture>
+  <source srcset="C:\Users\Rodney Mukarati\Pictures\Screenshots\Screenshot (147).png"media="(max-width: 600px)">
+  <source srcset="C:\Users\Rodney Mukarati\Pictures\Screenshots\Screenshot (118).png" media="(max-width: 1500px)">
+  <source srcset="C:\Users\Rodney Mukarati\Pictures\Screenshots\Screenshot (117).png">
+  <img src="C:\Users\Rodney Mukarati\Pictures\Screenshots\Screenshot (147).png" alt="Screenshot from Trainspotting">
+</picture>
+<h2>Responsive Text Size</h2>
+<p>The text size can be set with a <b>"vw" </b>unit, which means the <b>"viewport width"</b></p>
+<h1 style="font-size: 8vw;">Hello World</h1>
+<p style="font-size: 2vw;">Resize the browser window to see how the text size scales.</p>
+<p><b>Viewport is the browser window size. 1vw = 1& of viewport width. If the viewport is 500cm wide, 1vw is 0.5cm.</b></p>
+<h2>Media Queries</h2>
+<p>In addition to resize text and images, it is also common to use media queries in responsive web pages</p>
+<p>With media quries you can define completely different styles for different styles for different browser sizes.</p>
+<p>Example: resize the browser window to see that three div eleements below will display horizontally on large screens and stack vertically on small screens:
+<br>
+<img src="C:\Users\Rodney Mukarati\Pictures\Screenshots\Screenshot (154).png" alt="Image On Media Queries">
+<br>
+<iframe src="html45.html" title="Example">
+</p>
+<h2>Responsive Web Design - Frameworks</h2>
+<p>All popular CSS frameworks offer responsive design.</p>
+<p>They are free, and easy to use.</p>
+<h2>W3.CSS</h2>
+<p>W3.CSS is a modern CSS framework with support for desktop, tablet, and mobile design by default.</p>
+<p>W3.CSS is smaller and faster than similar CSS frameworks</p>
+<p>W3.CSS is designed to be independent of jQuery or any other JavaScript library.
+<br>
+<a href="html46.html">W3.CSS Demo</a>
+<img src="C:\Users\Rodney Mukarati\Pictures\Screenshots\Screenshot (155).png" alt="W3.CSS Demo">
+</p>
+<h2>Bootstrap</h2>
+<p><a href="html47.html">Another popular CSS framework is Bootstrap</a></p>
+</body>
+</html>
