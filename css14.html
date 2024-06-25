@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS Backgrounds</title>
+	<style type="text/css">
+		body {
+			background-color: lightskyblue;
+		}
+		h2 {
+			background-color: greenyellow;
+			opacity: 0.5;
+		}
+		p {
+			background-color: darkred;
+			opacity: 0.3;
+		}
+		div {
+			background: rgba(0, 128, 0, 0.3);/*Green Background with 30% opacity */
+		}
+	</style>
+</head>
+<body>
+<h2>CSS background-color</h2>
+<p>The background-color property specifies the background color of an element.</p>
+<p>With CSS, a color is most often specified by:
+<ul>
+	<li>a valid color name - like "red"</li>
+	<li>a HEX value - like "#ff0000"</li>
+	<li>an RGB value - like "rgb(255,0,0)"</li>
+</ul></p>
+<p><b>You can set the background color for any HTML elements like p, h1 and div</b></p>
+<h2>Opacity/ Transparency</h2>
+<p>The opacity property specifies the opacity/ transparency of an element. It can take a value from 0.0 - 1.0. <b>The lower value, the more transparent</b></p>
+<p><b>Note: </b>When using the opacity property to add transparency to the background of an element, all of its child elements inherit the same transparency. This can make the text inside a fully transparent element hard to read.</p>
+<h2>Transparency using RGBA</h2>
+<div><p>If you dont want to apply opacity to child elements, like in our example above, use RGBA color values. The following example sets the opacity for the background color and not the text
+<br>
+<img src="C:\Users\Rodney Mukarati\OneDrive\Pictures\Screenshots\Screenshot (209).png" alt="Example of Transparency width RGBA" style="width: 25px; height: 30px;"></p></div>
+</body>
+</html>
